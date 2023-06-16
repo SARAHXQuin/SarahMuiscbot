@@ -12,7 +12,7 @@ API_HASH = getenv("API_HASH", "76a9e84e87200fb7311a2d779a42d13a")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "6111967692:AAE_8envJxxIp2sAaB6SH5xMHo3r1kyjiOk")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://kalpanapreethiney:NbhQHSOev78c7M5H@cluster0.x6qgn4s.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
@@ -27,14 +27,14 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Karjr004/ShizukaXMusic",
+    "https://github.com/Avinashjr004/SarahMuiscbot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Karjr004/ShizukaXMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Avinashjr004/SarahMuiscbot")
 GIT_TOKEN = getenv("GIT_TOKEN", "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" )
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Star_X_Network")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Star_X_Support")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Sarah_updates")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AF_Support_Group")
 
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
@@ -80,11 +80,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/f576595d249f645c886fc.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/87c57ca975e1c1a71deaf.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/159d3f9e2d57dd02db970.jpg",
+    "https://te.legra.ph/file/cd427bd0b41314bc99bc1.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/6054be6dbfc0f654db62b.jpg"
@@ -134,9 +134,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/cd427bd0b41314bc99bc1.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/87c57ca975e1c1a71deaf.jpg"
