@@ -40,7 +40,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://te.legra.ph/file/7e30d55d71ba17b200a19.mp4"
+                text="💱 𝙑𝙋𝙎 🏷️", url=f"https://t.me/universe_we_are"
             ),
         ],
         [
@@ -48,7 +48,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="👑𝙌𝙪𝙚𝙚𝙣𝙨𝙡𝙖𝙣𝙙 ⛰️", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
@@ -68,14 +68,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://te.legra.ph/file/7e30d55d71ba17b200a19.mp4"),
+            InlineKeyboardButton(text="💱 𝙑𝙋𝙎 🏷️", url=f"https://t.me/universe_we_are"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="👑𝙌𝙪𝙚𝙚𝙣𝙨𝙡𝙖𝙣𝙙 ⛰️", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
@@ -91,14 +91,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://te.legra.ph/file/7e30d55d71ba17b200a19.mp4"),
+            InlineKeyboardButton(text="💱 𝙑𝙋𝙎 🏷️", url=f"https://t.me/universe_we_are"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="👑𝙌𝙪𝙚𝙚𝙣𝙨𝙡𝙖𝙣𝙙 ⛰️", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
