@@ -38,7 +38,7 @@ def truncate(text):
     text2 = text2.strip()     
     return [text1,text2]
 
-async def gen_thumb(videoid):
+async def gen_thumb(videoid, user_id):
     try:
         if os.path.isfile(f"cache/{videoid}.jpg"):
             return f"cache/{videoid}.jpg"
