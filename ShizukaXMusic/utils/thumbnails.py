@@ -9,7 +9,8 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
-from config import YOUTUBE_IMG_URL
+from config import YOUTUBE_IMG_URL, MUSIC_BOT_NAME
+from ShizukaXMusic import app
 
 
 def make_col():
@@ -76,15 +77,32 @@ async def gen_thumb(videoid, user_id):
                         await f.write(await resp.read())
                         await f.close()
 
+            try:
+                wxyz = await app.get_profile_photos(user_id)
+                wxy = await app.download_media(wxyz[0]['file_id'], file_name=f'{user_id}.jpg')
+            except:
+                hehe = await app.get_profile_photos(app.id)
+                wxy = await app.download_media(hehe[0]['file_id'], file_name=f'{app.id}.jpg')
+            xy = Image.open(wxy)
+            a = Image.new('L', [640, 640], 0)
+            b = ImageDraw.Draw(a)
+            b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")                
+            c = np.array(xy)
+            d = np.array(a)
+            e = np.dstack((c, d))
+            f = Image.fromarray(e)
+            x = f.resize((197, 197))  
+
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
-            image2 = image1.convert("RGBA")
-            background = image2.filter(filter=ImageFilter.BoxBlur(30))
-            enhancer = ImageEnhance.Brightness(background)
-            background = enhancer.enhance(0.6)
+            bg = Image.open("assets/kaithumb.png")
+            image2 = bg.convert("RGBA")
+            #background = image2.filter(filter=ImageFilter.BoxBlur(30))
+            enhancer = ImageEnhance.Brightness(image2)
+            background = enhancer.enhance(1)
             image2 = background
                                                                                             
-            circle = Image.open("assets/sarahkai.png")
+            circle = Image.open("assets/circle.png")
 
             # changing circle color
             im = circle
@@ -109,37 +127,41 @@ async def gen_thumb(videoid, user_id):
             lum_img_arr = np.array(lum_img)
             final_img_arr = np.dstack((img_arr,lum_img_arr))
             image3 = Image.fromarray(final_img_arr)
-            image3 = image3.resize((600,600))
+            image3 = image3.resize((380,380))
             
 
-            image2.paste(image3, (50,70), mask = image3)
-            image2.paste(circle, (0,0), mask = circle)
+            image2.paste(image3, (229,141), mask = image3)
+            image2.paste(x, (980, 586), mask=x)
+            #image2.paste(circle, (0,0), mask = circle)
 
             # fonts
             font1 = ImageFont.truetype('assets/font.ttf', 30)
             font2 = ImageFont.truetype('assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('assets/font2.ttf', 35)
+            font3 = ImageFont.truetype('assets/font3.ttf', 33)
+            #font4 = ImageFont.truetype('assets/font2.ttf', 30)
+            font5 = ImageFont.truetype('assets/font5.ttf', 80)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((10, 10), "MUSIC BOT", fill="white", font = font1, align ="left") 
-            image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
+            image4.text((10, 10), f"{MUSIC_BOT_NAME}", fill="white", font = font1, align ="left") 
+            image4.text((670, 230), "FEEL", fill="white", font = font5, stroke_width=2, stroke_fill="white")
+            image4.text((730, 330), "THE", fill="white", font = font5, stroke_width=2, stroke_fill="white")
+            image4.text((800, 430), "VIBE!", fill="white", font = font5, stroke_width=2, stroke_fill="white")
 
             # title
             title1 = truncate(title)
-            image4.text((670, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white",font = font3, align ="left") 
-            image4.text((670, 350), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font = font3, align ="left") 
+            image4.text((290, 620), text=title1[0], fill="white", stroke_width=1, stroke_fill="white",font = font3, align ="left") 
+            image4.text((338, 670), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font = font3, align ="left") 
 
             # description
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
             channel = f"Channel : {channel}"
 
-            image4.text((670, 450), text=views, fill="white", font = font4, align ="left") 
-            image4.text((670, 500), text=duration, fill="white", font = font4, align ="left") 
-            image4.text((670, 550), text=channel, fill="white", font = font4, align ="left")
+            #image4.text((650, 350), text=views, fill="white", font = font4, align ="left") 
+            #image4.text((650, 400), text=duration, fill="white", font = font4, align ="left") 
+            #image4.text((650, 450), text=channel, fill="white", font = font4, align ="left")
             
-            image2 = ImageOps.expand(image2,border=20,fill=make_col())
+            
             image2 = image2.convert('RGB')
             image2.save(f"cache/{videoid}.jpg")
             file = f"cache/{videoid}.jpg"
