@@ -161,6 +161,7 @@ async def stream(
                 "video" if video else "audio",
             )
             position = len(db.get(chat_id)) - 1
+            await app.send_photo(original_chat_id, photo="https://te.legra.ph/file/75fe2b0763a1536b48eee.jpg")
             await app.send_message(
                 original_chat_id,
                 _["queue_4"].format(
