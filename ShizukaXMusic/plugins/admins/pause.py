@@ -23,6 +23,9 @@ async def pause_admin(cli, message: Message, _, chat_id):
         return await message.reply_text(_["admin_1"], disable_web_page_preview=True)
     await music_off(chat_id)
     await Shizuka.pause_stream(chat_id)
-    await message.reply_text(
-        _["admin_2"].format(message.from_user.mention), disable_web_page_preview=True
+    photo_url = "https://te.legra.ph/file/10428b65648494b3c6ede.jpg"  # Replace with the URL of the photo you want to send
+    caption = _["admin_2"].format(message.from_user.mention)
+    await message.reply_photo(
+        photo=photo_url,                
     )
+    await message.reply_text(text=caption)
