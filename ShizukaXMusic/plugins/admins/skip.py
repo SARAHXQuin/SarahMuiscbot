@@ -186,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             db[chat_id][0]["markup"] = "tg"
         else:
             button = stream_markup(_, videoid, chat_id)
-            img = await gen_thumb(videoid, user_id)
+            img = await gen_thumb(videoid, chat_id)
             run = await message.reply_photo(
                 photo=img,
                 caption=_["stream_1"].format(
