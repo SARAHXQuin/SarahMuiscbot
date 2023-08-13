@@ -47,86 +47,86 @@ EMOJI = [ "🦋🦋🦋🦋🦋",
           " 🥬🍉🧁🧇",
         ]
 
-TAGMES = [ " **I love you 🤗** "
-           " **neeium nanum sernthae pogum neramae** "
-           " **road la iruku pallam neetha en chellam** "
-           " **aii nee en idupa patha na atha patha** "
-           " **na pothuva kova pada mata ena kova pada vachiratha** "
-           " **ne en ivlo gundaaaaa iruka** "
-           " **ne loosa ila loosu mathiri nadikuriya** "
-           " **pls call the ambulance unga kannu ena shoot panidichu** "
-           " **canteen la ituku pufs uh unaku enaku luvs uh** "
-           " **nalla shaving pana mala korangu mathiri oru munji** "
-           " **uthu pakatha vekama iruku** "
-           " **una pethangsla ila senjangala** "
-           " **ne ena mulla una thotalae kuthuthu** "
-           " **thambi tea inu varala** "
-           " **nalla saptu saptu thadi maadu Mathiri iruka** "
-           " **i think I'm fall in love with you** "
-           " **night lam thukamae varala neetha vara** "
-           " **kolantha poi paal kudichitu thungu po** "
-           " **epa pathalu urutite iru Vera vela ila la** "
-           " **na unaku frnd ah kedaika ne kuduthu vachirukanu** "
-           " **ne ena puliya** "
-           " **enkuda pesa matiya** "
-           " **en eee nu palla katura** "
-           " **unkuda ma doo** "
-           " **enkuda pesa matiya** "
-           " **ne romba cute ah iruka** "
-           " **sumave iruka matiya** "
-           " **aama yar ne** "
-           " **enaku pasikuthu** "
-           " **na unaku oru paatu padava** "
-           " **unkita onu solanu** "
-           " **na unaku yaru** "
-           " **una la thiruthave mudiyathu** "
-           " **ne la human thana doubt ah iruku** "
-           " **en mela pasame ila unaku** "
-           " **ne urutu un nalla manasuku neetha jeipa** "
-           " **you buffalo** "
-           " **pae** "
-           " **pani** "
-           " **eruma adi venuma** "
-           " **kalyanam agiducha** "
-           " **poi sona kondruvan** "
-           " **ens thavara vera ethavathu poni kita pesuviya** "
-           " **nane kolantha** "
-           " **na pavom thana** "
-           " **unaku manasatchi iruka** "
-           " **un peru ena** "
-           " **chii naughtyyy** "
-           " **ading kutty yaana** "
-           " **nala gunda thadiya poosnika mathiri oru munji** "
-           " **thukam varutha apa savu** "
-           " **na romba nala ponu theriuma** "
-           " **ena ethuku elaru sarah sarah nu kupudranga therium ah aena en name sarah** "
-           " **amma kita soliduva** "
-           " **na sapida pora tata** "
-           " **en boy friend romba good boy ena thavara ela ponu kitaium pesuvan** "
-           " **ne en thona thona nu pesite iruka** "
-           " **kai Valikuthu knjm kuda help panama iruka** "
-           " **un saavu sarah kailatha** "
-           " **sarah on sogam** "
-           " **kuty kolantha** "
-           " **adi venuma** "
-           " **un parvai enai patra vaikurathu** "
-           " **en thatha apave sonaru ne roma alaga irukanu** "
-           " **unaku pudikuma enaku pudikum** "
-           " **vanakam epdi irukinga pathu romba nal achu** "
-           " **enakune varuvinga la** "
-           " **olunga poidu ila case kuduthuruva** "
-           " **nama en saptu night pesa kudathu** "
-           " **paint adika theva brush uh antha paint eh neetha en crush uh** "
-           " **aanalum unaku mouth fat knjm athiga tha** "
-           " **blood fool** "
-           " **una la pethangala ila senjangala** "
-           " **enaaaaa urutuuuuuu** "
-           " **gunduuu babyyyy ena panringa yara pakuringa** "
-           " **veetla elarum nalama** "
-           " **una pakanume** "
-           " **oru nal una paka varuva** "
-           " **enaku romba tired ah iruku** "
-           " **na poi thungata** "
+TAGMES = [ " **I love you 🤗** ",
+           " **neeium nanum sernthae pogum neramae** ",
+           " **road la iruku pallam neetha en chellam** ",
+           " **aii nee en idupa patha na atha patha** ",
+           " **na pothuva kova pada mata ena kova pada vachiratha** ",
+           " **ne en ivlo gundaaaaa iruka** ",
+           " **ne loosa ila loosu mathiri nadikuriya** ",
+           " **pls call the ambulance unga kannu ena shoot panidichu** ",
+           " **canteen la ituku pufs uh unaku enaku luvs uh** ",
+           " **nalla shaving pana mala korangu mathiri oru munji** ",
+           " **uthu pakatha vekama iruku** ",
+           " **una pethangsla ila senjangala** ",
+           " **ne ena mulla una thotalae kuthuthu** ",
+           " **thambi tea inu varala** ",
+           " **nalla saptu saptu thadi maadu Mathiri iruka** ",
+           " **i think I'm fall in love with you** ",
+           " **night lam thukamae varala neetha vara** ",
+           " **kolantha poi paal kudichitu thungu po** ",
+           " **epa pathalu urutite iru Vera vela ila la** ",
+           " **na unaku frnd ah kedaika ne kuduthu vachirukanu** ",
+           " **ne ena puliya** ",
+           " **enkuda pesa matiya** ",
+           " **en eee nu palla katura** ",
+           " **unkuda ma doo** ",
+           " **enkuda pesa matiya** ",
+           " **ne romba cute ah iruka** ",
+           " **sumave iruka matiya** ",
+           " **aama yar ne** ",
+           " **enaku pasikuthu** ",
+           " **na unaku oru paatu padava** ",
+           " **unkita onu solanu** ",
+           " **na unaku yaru** ",
+           " **una la thiruthave mudiyathu** ",
+           " **ne la human thana doubt ah iruku** ",
+           " **en mela pasame ila unaku** ",
+           " **ne urutu un nalla manasuku neetha jeipa** ",
+           " **you buffalo** ",
+           " **pae** ",
+           " **pani** ",
+           " **eruma adi venuma** ",
+           " **kalyanam agiducha** ",
+           " **poi sona kondruvan** ",
+           " **ens thavara vera ethavathu poni kita pesuviya** ",
+           " **nane kolantha** ",
+           " **na pavom thana** ",
+           " **unaku manasatchi iruka** ",
+           " **un peru ena** ",
+           " **chii naughtyyy** ",
+           " **ading kutty yaana** ",
+           " **nala gunda thadiya poosnika mathiri oru munji** ",
+           " **thukam varutha apa savu** ",
+           " **na romba nala ponu theriuma** ",
+           " **ena ethuku elaru sarah sarah nu kupudranga therium ah aena en name sarah** ",
+           " **amma kita soliduva** ",
+           " **na sapida pora tata** ",
+           " **en boy friend romba good boy ena thavara ela ponu kitaium pesuvan** ",
+           " **ne en thona thona nu pesite iruka** ",
+           " **kai Valikuthu knjm kuda help panama iruka** ",
+           " **un saavu sarah kailatha** ",
+           " **sarah on sogam** ",
+           " **kuty kolantha** ",
+           " **adi venuma** ",
+           " **un parvai enai patra vaikurathu** ",
+           " **en thatha apave sonaru ne roma alaga irukanu** ",
+           " **unaku pudikuma enaku pudikum** ",
+           " **vanakam epdi irukinga pathu romba nal achu** ",
+           " **enakune varuvinga la** ",
+           " **olunga poidu ila case kuduthuruva** ",
+           " **nama en saptu night pesa kudathu** ",
+           " **paint adika theva brush uh antha paint eh neetha en crush uh** ",
+           " **aanalum unaku mouth fat knjm athiga tha** ",
+           " **blood fool** ",
+           " **una la pethangala ila senjangala** ",
+           " **enaaaaa urutuuuuuu** ",
+           " **gunduuu babyyyy ena panringa yara pakuringa** ",
+           " **veetla elarum nalama** ",
+           " **una pakanume** ",
+           " **oru nal una paka varuva** ",
+           " **enaku romba tired ah iruku** ",
+           " **na poi thungata** ",
            " **sai na aprm carw tata mich yew** "
          
          ]
